@@ -1,12 +1,18 @@
 /* Variables */
 :root {
   /* Color Scheme */
-  --bg-primary: #1a2024; /* #fdfdc7 */
-  --bg-secondary: #3a464d; /* #ffffe0 = lightyellow */
-  --nav-primary: #ac3931; /* #6F4221 */
-  --nav-secondary: #91312a; /* #96592D */
-  --hover: #ffc490; /* #214E6F */
-  --selected: #216f47; /* #42216F */
+  --bg-primary: #1a2024;
+  /* #fdfdc7 */
+  --bg-secondary: #3a464d;
+  /* #ffffe0 = lightyellow */
+  --nav-primary: #ac3931;
+  /* #6F4221 */
+  --nav-secondary: #91312a;
+  /* #96592D */
+  --hover: #ffc490;
+  /* #214E6F */
+  --selected: #216f47;
+  /* #42216F */
   --txt-primary: #dad2d8;
   --txt-hover: #6584ae;
 
@@ -31,18 +37,21 @@
 } */
 
 #back-to-top {
-  display: none; /* Hide the button by default */
+  display: none;
+  /* Hide the button by default */
   position: fixed;
   bottom: 1rem;
   right: 1rem;
   z-index: 100;
   opacity: 50%;
   border: none;
-  background-color: var(--nav-primary); /* Use your custom color variable */
+  background-color: var(--nav-primary);
+  /* Use your custom color variable */
   padding: 1em;
   border-radius: 50%;
   cursor: pointer;
 }
+
 #back-to-top:hover {
   opacity: 100%;
 }
@@ -72,6 +81,7 @@ hr {
 h1 {
   text-align: center;
 }
+
 h1.alt {
   background-color: var(--bg-primary);
   max-width: 9em;
@@ -93,6 +103,7 @@ h1.alt {
   list-style-position: inside;
   padding: 2vh;
 }
+
 .caption {
   margin-top: 1px;
 }
@@ -125,6 +136,7 @@ h1.alt {
   height: 40vh;
   width: auto;
 }
+
 .gif-small {
   height: 25vh;
   width: auto;
@@ -135,11 +147,13 @@ img.large-example {
   margin: 0 auto;
   width: 95%;
 }
+
 img.example {
   display: block;
   margin: 0 auto;
   width: 50%;
 }
+
 img.icon {
   width: 20pt;
 }
@@ -161,6 +175,7 @@ img.icon {
   height: 8vh;
   width: 100%;
 }
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -177,6 +192,7 @@ img.icon {
   justify-content: left;
   flex-grow: 1;
 }
+
 .nav-item {
   display: inline-block;
   padding: 10px 20px;
@@ -186,6 +202,7 @@ img.icon {
   cursor: pointer;
   position: relative;
 }
+
 .nav-item:hover {
   color: var(--hover);
   background-color: var(--nav-secondary);
@@ -201,13 +218,12 @@ img.icon {
   top: 0;
   bottom: 0;
   width: 1px;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.8)
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.8));
   right: -1px;
 }
+
 .nav-items .nav-item:last-child::after {
   content: none;
 }
@@ -217,6 +233,7 @@ img.icon {
   padding: 1vh;
   cursor: pointer;
 }
+
 .home-button img {
   height: 6vh;
   background: transparent;
@@ -235,14 +252,17 @@ img.icon {
   z-index: 3;
   transform-origin: top center;
 }
+
 .nav-item:hover .dropdown-content {
   display: block;
 }
+
 @keyframes slide-down {
   from {
     opacity: 0;
     transform: translateY(-10px) translateX(-50%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0) translateX(-50%);
@@ -255,11 +275,13 @@ img.icon {
   width: 100vw;
   animation: slide-down-M 0.5s ease-out;
 }
+
 @keyframes slide-down-M {
   from {
     opacity: 0;
     transform: translateY(-20vh);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -279,16 +301,19 @@ img.icon {
   color: var(--txt-primary);
   text-decoration: none;
 }
+
 .dropdown-option:first-child {
   border-top: 1px solid black;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
+
 .dropdown-option:last-child {
   border-bottom: 1px solid black;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
+
 .dropdown-option:hover {
   color: var(--hover);
 }
@@ -303,6 +328,7 @@ img.icon {
   z-index: 3;
   background: transparent;
 }
+
 .nav-toggle img {
   width: 100%;
   height: 100%;
@@ -311,14 +337,17 @@ img.icon {
 .mobile {
   position: relative;
 }
+
 .mobile .dropdown-content {
   top: 7vh;
   left: -100%;
 }
+
 .mobile .dropdown-content a {
   text-decoration: none;
   display: block;
 }
+
 .mobile .dropdown-content a:hover {
   background-color: var(--hover);
   color: var(--txt-primary);
@@ -350,11 +379,13 @@ img.icon {
   border-radius: 20px;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
 }
+
 .page-nav-items {
   display: flex;
   justify-content: left;
   flex-grow: 1;
 }
+
 .page-nav-item {
   display: inline-block;
   padding: 10px 20px;
@@ -370,6 +401,7 @@ img.icon {
   position: relative;
   border-radius: 12px;
 }
+
 .page-nav-item:hover {
   color: var(--hover);
   background-color: var(--nav-secondary);
@@ -390,9 +422,11 @@ img.icon {
   border-radius: 25px;
   text-align: center;
 }
+
 #content.no-page-nav {
   top: 0;
 }
+
 .content {
   width: 100%;
   height: 100%;
@@ -409,25 +443,31 @@ table {
   word-break: normal;
   margin: 1.5vh auto;
 }
+
 .portrait {
   object-fit: contain;
   max-height: 40vh;
   width: auto;
 }
+
 .details {
   text-align: center;
   width: 64vw;
 }
+
 .details img {
   width: 100%;
 }
+
 .subject {
   width: 30vw;
 }
+
 .label {
   font-weight: bold;
   font-size: 15px;
 }
+
 .archetype,
 .weapons {
   display: flex;
@@ -436,16 +476,19 @@ table {
   justify-content: center;
   height: 8vh;
 }
+
 .archetype img,
 .weapons img {
   height: 100%;
   width: auto;
   max-width: 20vw;
 }
+
 table .description {
   text-align: center;
   max-height: 30vh;
 }
+
 table.attack .portrait {
   width: 30vw;
 }
@@ -453,6 +496,7 @@ table.attack .portrait {
 .wielding .portrait {
   width: 100%;
 }
+
 .wielding td:first-child {
   width: calc(95vw - 64vw - 5px);
 }
@@ -474,13 +518,17 @@ table.attack .portrait {
   justify-content: space-between;
   box-sizing: border-box;
 }
+
 .row .subject,
 .row .details {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* aligns items horizontally */
-  align-items: center; /* aligns items vertically */
-  text-align: center; /* centers text */
+  justify-content: center;
+  /* aligns items horizontally */
+  align-items: center;
+  /* aligns items vertically */
+  text-align: center;
+  /* centers text */
 }
 
 /* Changelog Table Stylings */
@@ -491,6 +539,7 @@ table.changelog {
   width: 80vw;
   margin: 0 auto;
 }
+
 table.changelog th,
 table.changelog td {
   border: 1px solid black;
@@ -498,22 +547,23 @@ table.changelog td {
   box-sizing: border-box;
   text-align: center;
 }
+
 table.changelog th:first-child,
 table.changelog td:first-child,
 table.changelog th:nth-child(2),
 table.changelog td:nth-child(2) {
   width: 10vw;
 }
+
 table.changelog th:nth-child(3),
 table.changelog td:nth-child(3) {
   width: 60vw;
 }
 
 /* Souljade Set Ups Table Styling */
-table.ice,
-table.lightning,
-table.fire,
-table.thunderbolt {
+.build {
+  background-color: var(--bg-primary);
+
   width: 80%;
   margin-top: 0;
 
@@ -525,51 +575,56 @@ table.thunderbolt {
 .text-ice {
   color: lightblue;
 }
+
 .text-lightning {
   color: palegoldenrod;
 }
+
 .text-fire {
   color: orangered;
 }
+
 .text-thunderbolt {
   color: darkviolet;
 }
 
-table.ice {
-  background-color: var(--bg-primary);
+.build-ice {
   border-color: lightblue;
 }
-table.lightning {
-  background-color: var(--bg-primary);
+
+.build-lightning {
   border-color: palegoldenrod;
 }
-table.fire {
-  background-color: var(--bg-primary);
+
+.build-fire {
   border-color: orangered;
 }
-table.thunderbolt {
-  background-color: var(--bg-primary);
+
+.build-thunderbolt {
   border-color: darkviolet;
 }
 
-.btn-collapse {
+.build-collapser {
   background: transparent;
   width: 100%;
 }
 
-.jade-set-up th,
-.jade-set-up td {
+.build th,
+.build td {
   padding: 8px;
   width: 65%;
   text-align: center;
 }
-.jade-set-up th.header {
+
+.build th.header {
   font-weight: bold;
 }
-.jade-set-up tr.header {
+
+.build tr.header {
   height: 32px;
 }
-.jade-set-up td:first-child {
+
+.build td:first-child {
   width: 35%;
 }
 
@@ -581,13 +636,16 @@ table.thunderbolt {
     border-bottom-color: black;
     border-right-color: black;
   }
+
   .nav-items {
     display: none;
     flex-direction: column;
   }
+
   .nav-item {
     display: none;
   }
+
   .nav-item.show {
     display: block;
   }
@@ -608,10 +666,12 @@ table.thunderbolt {
   .hero-table {
     display: flow;
   }
+
   .hero-table .row {
     display: inline-block;
     justify-content: center;
   }
+
   .hero-table .row .subject {
     margin: 0 auto;
   }
@@ -621,9 +681,11 @@ table.thunderbolt {
   #content.nav3 {
     margin-top: 16vh;
   }
+
   #content.nav4 {
     margin-top: 22vh;
   }
+
   #content.nav5 {
     margin-top: 28vh;
   }
@@ -631,6 +693,7 @@ table.thunderbolt {
   .gif {
     height: 25vh;
   }
+
   .gif-small {
     height: 15vh;
   }
