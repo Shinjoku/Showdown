@@ -60,11 +60,12 @@
 body {
   color: var(--txt-primary);
   background: linear-gradient(var(--bg-primary), var(--bg-secondary));
-  margin: 0;
+  margin: auto;
   padding: 0;
   /* Scrollbar Stylings for Firefox */
   scrollbar-color: var(--nav-primary) var(--bg-primary);
   scrollbar-width: thin;
+  height: 100%;
 }
 
 .container {
@@ -218,9 +219,11 @@ img.icon {
   top: 0;
   bottom: 0;
   width: 1px;
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.8));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.8)
+  );
   right: -1px;
 }
 
@@ -589,11 +592,11 @@ table.changelog td:nth-child(3) {
 }
 
 .build-ice {
-  border-color: lightblue;
+  border-color: aqua;
 }
 
 .build-lightning {
-  border-color: palegoldenrod;
+  border-color: goldenrod;
 }
 
 .build-fire {
